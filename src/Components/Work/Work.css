@@ -1,0 +1,99 @@
+:root {
+  --color-white: #fffffa;
+  --color-black: #001021;
+  --color-black-2: #787878;
+  --color-grey: #e8e8e8;
+  --color-indigo: #afa2ff;
+  --color-red: #e03616;
+  --color-green: #558b6e;
+}
+
+.work {
+  padding: 4rem;
+}
+.work__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20vw;
+  grid-gap: 4rem;
+}
+@media only screen and (max-width: 48.5em) {
+  .work__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.work__item {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.work__item .img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.work__item p {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-red);
+  transform: translate(0%, -75px);
+  z-index: 5;
+  transition: all 0.5s;
+}
+.work__item .overlay {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 16, 33, 0.6));
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.5s;
+  position: relative;
+  z-index: 5;
+}
+.work__item:hover .overlay {
+  -o-object-fit: cover;
+     object-fit: cover;
+  visibility: visible;
+  transform: translate(0, -287px);
+  opacity: 1;
+}
+.work__item:hover p {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, -180px);
+}
+@media only screen and (max-width: 51.25em) {
+  .work__item p {
+    font-size: 2rem;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0%, -90px);
+  }
+  .work__item .overlay {
+    display: none;
+    visibility: hidden;
+  }
+  .work__item:hover .overlay {
+    -o-object-fit: cover;
+       object-fit: cover;
+    visibility: visible;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  .work__item:hover p {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0%, -90px);
+  }
+}/*# sourceMappingURL=Work.css.map */

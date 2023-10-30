@@ -1,0 +1,153 @@
+:root {
+  --color-white: #fffffa;
+  --color-black: #001021;
+  --color-black-2: #787878;
+  --color-grey: #e8e8e8;
+  --color-indigo: #afa2ff;
+  --color-red: #e03616;
+  --color-green: #558b6e;
+}
+
+.hero {
+  width: 100%;
+  background-color: var(--color-grey);
+  height: 90vh;
+
+  @media only screen and (max-width: 59.375em) {
+    height: 70vh;
+  }
+
+  @media only screen and (max-width: 48.5em) {
+    height: 72vh;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    height: 90vh;
+  }
+
+  &__text {
+    position: absolute;
+    top: 18%;
+    left: 15%;
+
+    p {
+      font-size: 2rem;
+
+      span {
+        font-size: 4rem;
+        color: var(--color-red);
+      }
+    }
+
+    @media only screen and (max-width: 48.5em) {
+      top: 10%;
+    }
+
+    @media only screen and (max-width: 27.5em) {
+      left: 10%;
+
+      p {
+        font-size: 1.5rem;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      top: 20%;
+
+      p {
+        font-size: 1.3rem;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .heading__secondary {
+    letter-spacing: 3px;
+    font-size: 5rem;
+    color: var(--color-black);
+    margin-top: 2rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: 27.5em) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  .button {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    display: flex;
+    gap: 4rem;
+
+    @media only screen and (max-width: 59.375em) {
+      top: 50%;
+    }
+
+    @media only screen and (max-width: 48.5em) {
+      top: 55%;
+    }
+
+    @media only screen and (max-width: 27.5em) {
+      top: 45%;
+      left: 10%;
+      flex-direction: column;
+      align-items: start;
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      top: 50%;
+    }
+  }
+
+  .btn {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    background-color: var(--color-grey);
+    color: var(--color-black);
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 27.5em) {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      color: var(--color-white);
+    }
+
+    &__primary {
+      border-bottom: 2px solid var(--color-red);
+      color: var(--color-red);
+
+      &:hover {
+        background-color: var(--color-red);
+      }
+    }
+
+    &__secondary {
+      border-bottom: 2px solid var(--color-black);
+      color: var(--color-black);
+
+      &:hover {
+        background-color: var(--color-black);
+        color: var(--color-white);
+      }
+    }
+  }
+}

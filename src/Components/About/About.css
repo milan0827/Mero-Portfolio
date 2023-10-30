@@ -1,0 +1,59 @@
+:root {
+  --color-white: #fffffa;
+  --color-black: #001021;
+  --color-black-2: #787878;
+  --color-grey: #e8e8e8;
+  --color-indigo: #afa2ff;
+  --color-red: #e03616;
+  --color-green: #558b6e;
+}
+
+.about__myself {
+  gap: 6rem;
+  width: 80%;
+}
+.about__myself.flex {
+  justify-content: flex-start;
+}
+.about__myself .img {
+  width: 35rem;
+}
+.about__myself p {
+  font-size: 3rem;
+}
+.about__myself p span {
+  font-size: 5rem;
+  color: var(--color-red);
+}
+@media only screen and (max-width: 48.5em) {
+  .about__myself {
+    padding: 3rem;
+    padding-right: 0;
+    gap: 3rem;
+  }
+  .about__myself.flex {
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+  }
+  .about__myself .img {
+    width: 30rem;
+  }
+  .about__myself p {
+    font-size: 2.5rem;
+  }
+  .about__myself p span {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 27.5em) {
+  .about__myself {
+    padding: 1rem;
+  }
+  .about__myself .img {
+    width: 25rem;
+  }
+  .about__myself p span {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=About.css.map */
