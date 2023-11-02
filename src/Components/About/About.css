@@ -1,4 +1,4 @@
-:root {
+root {
   --color-white: #fffffa;
   --color-black: #001021;
   --color-black-2: #787878;
@@ -9,12 +9,17 @@
 }
 
 .about {
-  width: 40vh;
+  width: 100%;
+}
+@media only screen and (max-width: 27.5em) {
+  .about {
+    padding: 2rem !important;
+  }
 }
 .about__myself {
-  justify-content: flex-start;
+  align-items: flex-start;
   gap: 6rem;
-  width: 80%;
+  width: 100%;
 }
 .about__myself.flex {
   justify-content: flex-start;
@@ -38,10 +43,11 @@
   .about__myself.flex {
     flex-direction: column;
     justify-content: center;
-    text-wrap: wrap;
+    flex-wrap: wrap;
   }
   .about__myself .img {
     width: 30rem;
+    align-self: flex-start;
   }
   .about__myself p {
     font-size: 2.5rem;
@@ -61,13 +67,30 @@
     font-size: 2.5rem;
   }
 }
+.about .skill {
+  width: 100%;
+}
+.about .skill.flex {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .about .skill__icons {
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
+.about .skill__icons .icons {
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .about .skill__icons .icons .icons__el {
-  width: 4rem;
-  height: 4rem;
+  padding: 1rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4rem;
+  border-top: 4px outset #dcdada;
+  border-left: 4px outset #dcdada;
 }
 .about .skill__icons .icons .icons__el-1 {
   color: red;
