@@ -9,7 +9,6 @@ import {
   BiLogoVisualStudio,
 } from "react-icons/bi";
 import { BsGit } from "react-icons/bs";
-import Image from "../../Assets/me.png";
 
 import "./About.css";
 
@@ -22,7 +21,7 @@ function About() {
         {/* <img src={Image} alt="My Image" className="img" /> */}
 
         <div className="skill">
-          <h2 className="heading__secondary">What am I good at:</h2>
+          <h2 className="heading__secondary">What I am good at:</h2>
           <p>Technology I use:</p>
           <ul className="flex skill__icons">
             <li className="icons">
