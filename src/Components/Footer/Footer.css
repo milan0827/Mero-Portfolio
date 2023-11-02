@@ -1,0 +1,86 @@
+:root {
+  --color-white: #fffffa;
+  --color-black: #001021;
+  --color-black-2: #787878;
+  --color-grey: #e8e8e8;
+  --color-indigo: #afa2ff;
+  --color-red: #e03616;
+  --color-green: #558b6e;
+}
+
+.footer {
+  background-color: var(--color-black);
+  padding: 8rem;
+  color: var(--color-white);
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 59.375em) {
+  .footer {
+    padding: 6rem;
+  }
+}
+@media only screen and (max-width: 27.5em) {
+  .footer {
+    padding: 2rem;
+  }
+}
+.footer__contact {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 59.375em) {
+  .footer__contact {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 27.5em) {
+  .footer__contact {
+    width: 100%;
+  }
+}
+.footer .form {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+@media only screen and (max-width: 27.5em) {
+  .footer .form {
+    gap: 1.8rem;
+  }
+}
+.footer .form__group {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .form__group #message {
+  resize: none;
+}
+.footer .form__label {
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+.footer .form__label span {
+  color: #999;
+}
+.footer .form__input {
+  padding: 1rem;
+  border: none;
+}
+.footer .form__input:focus {
+  outline: none;
+}
+.footer .btn__footer {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+}
+.footer .btn__footer:hover {
+  background-color: rgba(224, 54, 22, 0.8);
+}/*# sourceMappingURL=Footer.css.map */

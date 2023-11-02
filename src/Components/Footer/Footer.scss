@@ -1,0 +1,92 @@
+:root {
+  --color-white: #fffffa;
+  --color-black: #001021;
+  --color-black-2: #787878;
+  --color-grey: #e8e8e8;
+  --color-indigo: #afa2ff;
+  --color-red: #e03616;
+  --color-green: #558b6e;
+}
+
+.footer {
+  background-color: var(--color-black);
+  padding: 8rem;
+  color: var(--color-white);
+  margin-top: 4rem;
+
+  @media only screen and (max-width: 59.375em) {
+    padding: 6rem;
+  }
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 2rem;
+  }
+
+  &__contact {
+    text-align: center;
+    // width: 75rem;
+    width: 60%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 59.375em) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 27.5em) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    @media only screen and (max-width: 27.5em) {
+      gap: 1.8rem;
+    }
+
+    &__group {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      #message {
+        resize: none;
+      }
+    }
+
+    &__label {
+      align-self: flex-start;
+      text-transform: uppercase;
+
+      span {
+        color: #999;
+      }
+    }
+
+    &__input {
+      padding: 1rem;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .btn__footer {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgba(224, 54, 22, 0.8);
+    }
+  }
+}
