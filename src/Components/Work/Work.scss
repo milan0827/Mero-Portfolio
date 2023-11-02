@@ -9,11 +9,15 @@
 }
 
 .work {
-  padding: 4rem;
+  background-color: var(--color-grey);
+  padding: 6rem !important;
+  padding-bottom: 10rem !important;
+  margin-top: 4rem;
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20vw;
+    grid-template-rows: 15vw;
     grid-gap: 4rem;
 
     @media only screen and (max-width: 48.5em) {
@@ -25,6 +29,7 @@
   &__item {
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
     .img {
       display: block;
@@ -33,6 +38,10 @@
       height: 100%;
       cursor: pointer;
       transition: all 0.6s;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
 
     p {
