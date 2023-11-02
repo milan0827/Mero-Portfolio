@@ -19,13 +19,13 @@ function About() {
       <h3 className="heading__tertiary">Skills</h3>
 
       <div className=" about__myself flex ">
-        {/* <img src={Image} alt="My Image" className="img" /> */}
+        <img src={Image} alt="My Image" className="img" />
 
-        <div className="skill">
+        <div className="skill flex">
           <h2 className="heading__secondary">What am I good at:</h2>
           <p>Technology I use:</p>
           <ul className="flex skill__icons">
-            <li className="icons">
+            <li className="icons ">
               <AiFillHtml5 className="icons__el icons__el-1" />
             </li>
             <li className="icons">

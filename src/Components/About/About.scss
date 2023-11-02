@@ -9,17 +9,20 @@
 }
 
 .about {
-  width: 40vh;
+  width: 100%;
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 2rem !important;
+  }
 
   &__myself {
-    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6rem;
+    width: 100%;
 
     &.flex {
       justify-content: flex-start;
     }
-
-    gap: 6rem;
-    width: 80%;
 
     .img {
       width: 35rem;
@@ -42,11 +45,12 @@
       &.flex {
         flex-direction: column;
         justify-content: center;
-        text-wrap: wrap;
+        flex-wrap: wrap;
       }
 
       .img {
         width: 30rem;
+        align-self: flex-start;
       }
 
       p {
@@ -75,14 +79,28 @@
   }
 
   .skill {
+    width: 100%;
+    &.flex {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &__icons {
       justify-content: flex-start;
+      flex-wrap: wrap;
       gap: 1.5rem;
 
       .icons {
+        padding: 0.5rem;
+        padding-bottom: 0.5rem;
+
         .icons__el {
-          width: 4rem;
-          height: 4rem;
+          padding: 1rem;
+          width: 6rem;
+          height: 6rem;
+          border-radius: 4rem;
+          border-top: 4px outset #dcdada;
+          border-left: 4px outset #dcdada;
 
           &-1 {
             color: red;
@@ -130,4 +148,25 @@
       }
     }
   }
+}
+
+.icons {
+  // position: relative;
+  cursor: pointer;
+}
+
+.icons__el::before {
+  display: block;
+  width: 2rem;
+  height: 100%;
+  border-color: black;
+  content: "html";
+  font-size: 2rem;
+  position: relative;
+}
+
+.icons:hover .icons__el::before {
+  content: "html";
+  color: black;
+  font-size: 2rem;
 }
