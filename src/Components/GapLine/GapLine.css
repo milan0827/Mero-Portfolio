@@ -1,1 +1,9 @@
-/*# sourceMappingURL=GapLine.css.map */
+.gapline {
+  width: 100%;
+}
+.gapline hr {
+  margin-top: 6rem;
+  width: 6rem;
+  border: none;
+  border-top: 1rem dotted #fb8873;
+}/*# sourceMappingURL=GapLine.css.map */
