@@ -21,8 +21,8 @@ function About() {
         {/* <img src={Image} alt="My Image" className="img" /> */}
 
         <div className="skill">
-          <h2 className="heading__secondary">What I am good at:</h2>
-          <p>Technology I use:</p>
+          <h4 className="heading__secondary">What I am good at:</h4>
+          <p>Technologies :</p>
           <ul className="flex skill__icons">
             <li className="icons">
               <AiFillHtml5 className="icons__el icons__el-1" />
@@ -50,7 +50,7 @@ function About() {
             </li>
           </ul>
           <br />
-          <p>Tools I use:</p>
+          <p>Tools :</p>
           <ul className="flex skill__icons">
             <li className="icons">
               <BsGit className="icons__el icons__el-9" />

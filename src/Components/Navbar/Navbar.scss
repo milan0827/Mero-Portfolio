@@ -21,7 +21,7 @@
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 
     h1 {
-      flex: 0 0 20%;
+      flex: 0 0 30%;
     }
 
     &__list {
@@ -97,6 +97,12 @@
         display: block;
         visibility: visible;
         font-size: 3rem;
+      }
+    }
+
+    @media only screen and (max-width: 27.5em) {
+      h1 {
+        flex: 0 0 80%;
       }
     }
   }

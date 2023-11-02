@@ -43,6 +43,8 @@ function Footer() {
           <input type="submit" className="btn btn__footer" />
         </form>
       </div>
+
+      <p>Milan Rokaya &copy;All rights reserved</p>
     </footer>
   );
 }

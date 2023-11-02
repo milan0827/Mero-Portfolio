@@ -10,7 +10,8 @@
 
 .footer {
   background-color: var(--color-black);
-  padding: 8rem;
+  padding: 6rem 8rem 0;
+  padding-bottom: 0rem;
   color: var(--color-white);
   margin-top: 4rem;
 }
@@ -68,19 +69,29 @@
 .footer .form__input {
   padding: 1rem;
   border: none;
+  background-color: var(--color-grey);
 }
 .footer .form__input:focus {
   outline: none;
 }
 .footer .btn__footer {
+  font-size: 2rem;
   margin-top: 2rem;
   padding: 1rem 2rem;
   display: block;
-  background-color: var(--color-red);
   color: var(--color-white);
   border: none;
-  border-radius: 5px;
+  border-bottom: 2px solid var(--color-white);
+  background-color: transparent;
+  transition: all 0.2s;
 }
 .footer .btn__footer:hover {
-  background-color: rgba(224, 54, 22, 0.8);
+  background-color: var(--color-white);
+  color: var(--color-red);
+}
+.footer P {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--color-black-2);
+  font-size: 1.1rem;
 }/*# sourceMappingURL=Footer.css.map */

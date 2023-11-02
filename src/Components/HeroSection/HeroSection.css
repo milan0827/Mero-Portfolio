@@ -33,6 +33,9 @@
   top: 18%;
   left: 15%;
 }
+.hero__text h2 {
+  font-family: "Pacifico", cursive !important;
+}
 .hero__text p {
   font-size: 2rem;
 }
