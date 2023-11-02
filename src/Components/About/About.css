@@ -8,7 +8,11 @@
   --color-green: #558b6e;
 }
 
+.about {
+  width: 40vh;
+}
 .about__myself {
+  justify-content: flex-start;
   gap: 6rem;
   width: 80%;
 }
@@ -56,4 +60,45 @@
   .about__myself p span {
     font-size: 2.5rem;
   }
+}
+.about .skill__icons {
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.about .skill__icons .icons .icons__el {
+  width: 4rem;
+  height: 4rem;
+}
+.about .skill__icons .icons .icons__el-1 {
+  color: red;
+}
+.about .skill__icons .icons .icons__el-2 {
+  color: rgb(84, 84, 251);
+}
+.about .skill__icons .icons .icons__el-3 {
+  color: rgb(232, 232, 50);
+}
+.about .skill__icons .icons .icons__el-4 {
+  color: skyblue;
+}
+.about .skill__icons .icons .icons__el-5 {
+  color: green;
+}
+.about .skill__icons .icons .icons__el-6 {
+  color: rgb(71, 111, 232);
+}
+.about .skill__icons .icons .icons__el-7 {
+  color: green;
+}
+.about .skill__icons .icons .icons__el-8 {
+  color: rgb(71, 111, 232);
+}
+.about .skill__icons .icons .icons__el-9 {
+  color: rgb(71, 111, 232);
+}
+.about .skill__icons .icons .icons__el-10 {
+  color: black;
+}
+.about .skill__icons .icons .icons__el-11 {
+  color: rgb(0, 64, 255);
 }/*# sourceMappingURL=About.css.map */
